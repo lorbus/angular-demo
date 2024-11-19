@@ -1,0 +1,50 @@
+<mat-sidenav-container fullscreen>
+
+  <mat-sidenav #start (keydown)="start.close()">
+    <mat-nav-list>
+      <a mat-list-item routerLink="login" *ngIf="auth.isLoggedOut$ | async">
+        <mat-icon>account_circle</mat-icon>
+        <span>Login</span>
+      </a>
+
+      <a mat-list-item routerLink="/" *ngIf="auth.isLoggedIn$ | async">
+        <mat-icon>library_books</mat-icon>
+        <span>Courses</span>
+      </a>
+
+      <a mat-list-item routerLink="/search-lessons" *ngIf="auth.isLoggedIn$ | async">
+        <mat-icon>search</mat-icon>
+        <span>Search Lessons</span>
+      </a>
+
+      <a mat-list-item (click)="logout()" *ngIf="auth.isLoggedIn$ | async">
+        <mat-icon>exit_to_app</mat-icon>
+        <span>Logout</span>
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-toolbar color="primary">
+    <div class="toolbar-tools">
+      <button [matTooltip]="'Open Menu'" mat-icon-button (click)="start.open('mouse')">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <div class="filler"></div>
+    </div>
+  </mat-toolbar>
+
+  <loading></loading>
+
+  <router-outlet></router-outlet>
+
+  <ngx-scrolltop
+    [backgroundColor]="'#212121'"
+    [symbolColor]="'#800e0e'"
+    [size]="40"
+    [mode]="'classic'"
+    position="right"
+    theme="gray"
+  >
+  </ngx-scrolltop>
+
+</mat-sidenav-container>
