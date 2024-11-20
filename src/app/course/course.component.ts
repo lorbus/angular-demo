@@ -1,7 +1,5 @@
 import {AfterViewInit, Component, OnInit, ViewChild} from '@angular/core';
 import {ActivatedRoute, Router} from "@angular/router";
-import {  MatPaginator } from "@angular/material/paginator";
-import { MatSort } from "@angular/material/sort";
 import {Course} from "../model/course";
 import {CoursesService} from "../service/courses.service";
 import { tap, catchError, finalize} from 'rxjs/operators';
@@ -9,12 +7,15 @@ import {merge, throwError} from 'rxjs';
 import {Lesson} from '../model/lesson';
 import { ToastrService } from 'ngx-toastr';
 import { LoadingService } from '../loading/loading.service';
+import { MatPaginator } from "@angular/material/paginator";
+import { MatSort } from "@angular/material/sort";
+
 //import {SelectionModel} from '@angular/cdk/collections';
 
 @Component({
   selector: 'course',
   templateUrl: './course.component.html',
-  styleUrls: ['./course.component.scss']
+  styleUrls: ['./course.component.scss'],
 })
 export class CourseComponent implements OnInit, AfterViewInit {
 
@@ -66,8 +67,9 @@ export class CourseComponent implements OnInit, AfterViewInit {
       this.course.id,
       this.sort?.direction ?? "asc",
       this.paginator?.pageIndex ?? 0,
-      this.paginator?.pageSize ?? 3,
-      this.sort?.active ?? "seqNo")
+      this.paginator?.pageSize ?? 5,
+      this.sort?.active ?? "seqNo"
+    )
       .pipe(
         tap(lessons => this.lessons = lessons),
         catchError(err => {
@@ -84,7 +86,7 @@ export class CourseComponent implements OnInit, AfterViewInit {
   ngAfterViewInit() {
     this.sort.sortChange.subscribe(() => this.paginator.pageIndex = 0);
 
-    merge(this.sort.sortChange, this.paginator.page)
+    merge(this.paginator.page, this.sort.sortChange)
       .pipe(
         tap(() => this.loadLessonsPage())
       )
@@ -126,3 +128,4 @@ export class CourseComponent implements OnInit, AfterViewInit {
   }
 
 }
+

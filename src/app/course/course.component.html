@@ -12,41 +12,39 @@
     -->
 
   <div class="scrolling-container">
-
   <table mat-table class="lessons-table mat-elevation-z8" style="position: sticky; z-index: 10;"
-       matSort matSortDisableClear matSortActive="seqNo" matSortDirection="asc"
-       [dataSource]="lessons" multiTemplateDataRows>
+         [dataSource]="lessons" matSort matSortDisableClear matSortActive="seqNo" matSortDirection="asc">
 
-  <!--
-  <ng-container matColumnDef="select" sticky>
-    <th mat-header-cell *matHeaderCellDef>
+<!--
+<ng-container matColumnDef="select" sticky>
+ <th mat-header-cell *matHeaderCellDef>
 
-    <mat-checkbox [checked]="selection.hasValue() && isAllSelected()"
-                  [indeterminate]="selection.hasValue() && !isAllSelected()"
-                  (change)="toggleAll()">
-    </mat-checkbox>
-    </th>
+ <mat-checkbox [checked]="selection.hasValue() && isAllSelected()"
+               [indeterminate]="selection.hasValue() && !isAllSelected()"
+               (change)="toggleAll()">
+ </mat-checkbox>
+ </th>
 
-    <td mat-cell *matCellDef="let lesson" (click)="$event.stopPropagation()">
-      <mat-checkbox (change)="onLessonToggled(lesson)" [checked]="selection.isSelected(lesson)"></mat-checkbox>
-    </td>
-  </ng-container>
-  -->
+ <td mat-cell *matCellDef="let lesson" (click)="$event.stopPropagation()">
+   <mat-checkbox (change)="onLessonToggled(lesson)" [checked]="selection.isSelected(lesson)"></mat-checkbox>
+ </td>
+</ng-container>
+-->
 
         <ng-container matColumnDef="seqNo">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header>Nr.</th>
+          <th mat-header-cell *matHeaderCellDef mat-sort-header="seqNo">Nr.</th>
 
           <td mat-cell *matCellDef="let lesson">{{lesson.seqNo}}</td>
         </ng-container>
 
         <ng-container matColumnDef="description">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header>Description</th>
+          <th mat-header-cell *matHeaderCellDef mat-sort-header="description">Description</th>
 
           <td mat-cell *matCellDef="let lesson">{{lesson.description}}</td>
         </ng-container>
 
         <ng-container matColumnDef="duration">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header>Duration</th>
+          <th mat-header-cell *matHeaderCellDef mat-sort-header="duration">Duration (Minutes)</th>
 
           <td class="duration-cell" mat-cell *matCellDef="let lesson">{{lesson.duration}}</td>
         </ng-container>

@@ -6,7 +6,6 @@ export interface Course {
   iconUrl: string;
   price: number;
   uploadedImageUrl: string;
-  courseListIcon: string;
   category: string;
   lessonsCount: number;
   releaseDate: string;

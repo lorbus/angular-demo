@@ -2,9 +2,9 @@ export const COURSES: any = {
 
   1: {
     id: 1,
-    description: 'Serverless Angular with Firebase Course',
-    longDescription: 'Serveless Angular with Firestore, Firebase Storage & Hosting, Firebase Cloud Functions & AngularFire',
-    iconUrl: 'https://s3-us-west-1.amazonaws.com/angular-university/course-images/serverless-angular-small.png',
+    description: 'Serverless Angular and Firebase Course',
+    longDescription: 'Learn Serverless Angular with Firestore.',
+    iconUrl: 'https://s3-us-west-1.amazonaws.com',
     lessonsCount: 10,
     category: 'BEGINNER',
     seqNo: 6,
@@ -14,11 +14,11 @@ export const COURSES: any = {
   },
   2: {
     id: 2,
-    description: 'Angular Core Deep Dive Course',
-    longDescription: 'A detailed walk-through of the most important part of Angular - the Core and Common modules',
-    iconUrl: 'https://s3-us-west-1.amazonaws.com/angular-university/course-images/angular-core-in-depth-small.png',
+    description: 'Angular Advanced Course',
+    longDescription: 'Learn in detail the Core and Common modules',
+    iconUrl: 'https://s3-us-west-1.amazonaws.com',
     lessonsCount: 10,
-    category: 'BEGINNER',
+    category: 'ADVANCED',
     seqNo: 3,
     url: 'angular-core-course',
     price: 50,
@@ -26,10 +26,9 @@ export const COURSES: any = {
   },
   3: {
     id: 3,
-    description: 'RxJs In Practice Course',
-    longDescription: 'Understand the RxJs Observable pattern, learn the RxJs Operators via practical examples',
-    iconUrl: 'https://s3-us-west-1.amazonaws.com/angular-university/course-images/rxjs-in-practice-course.png',
-    courseListIcon: 'https://angular-academy.s3.amazonaws.com/main-logo/main-page-logo-small-hat.png',
+    description: 'RxJs Course',
+    longDescription: 'Learn the RxJs Observable pattern.',
+    iconUrl: 'https://s3-us-west-1.amazonaws.com',
     category: 'BEGINNER',
     lessonsCount: 10,
     seqNo: 2,
@@ -39,9 +38,9 @@ export const COURSES: any = {
   },
   4: {
     id: 4,
-    description: 'NgRx Course',
-    longDescription: 'Learn the modern Ngrx Ecosystem, including NgRx Data, Store, Effects, Router Store, Ngrx Entity, and Dev Tools.',
-    iconUrl: 'https://angular-university.s3-us-west-1.amazonaws.com/course-images/ngrx-v2.png',
+    description: 'NgRx Intermediate Course',
+    longDescription: 'Learn the Ngrx Ecosystem, how it works and all it\'s components.',
+    iconUrl: 'https://s3-us-west-1.amazonaws.com',
     category: 'INTERMEDIATE',
     lessonsCount: 10,
     seqNo: 1,
@@ -53,9 +52,8 @@ export const COURSES: any = {
   5: {
     id: 5,
     description: 'Angular for Beginners Course',
-    longDescription: 'Establish a solid layer of fundamentals, learn what\'s under the hood of Angular',
-    iconUrl: 'https://angular-academy.s3.amazonaws.com/thumbnails/angular2-for-beginners-small-v2.png',
-    courseListIcon: 'https://angular-academy.s3.amazonaws.com/main-logo/main-page-logo-small-hat.png',
+    longDescription: 'Learn fundamentals of Angular, how it works and it\'s components.',
+    iconUrl: 'https://s3-us-west-1.amazonaws.com',
     category: 'BEGINNER',
     lessonsCount: 10,
     seqNo: 4,
@@ -66,9 +64,8 @@ export const COURSES: any = {
   6: {
     id: 6,
     description: 'Angular Security Course',
-    longDescription: 'Learn Web Security Fundamentals and apply them to defend an Angular / Node Application from multiple types of attacks.',
-    iconUrl: 'https://s3-us-west-1.amazonaws.com/angular-university/course-images/security-cover-small-v2.png',
-    courseListIcon: 'https://s3-us-west-1.amazonaws.com/angular-university/course-images/lock-v2.png',
+    longDescription: 'Learn Advanced Web Security.',
+    iconUrl: 'https://s3-us-west-1.amazonaws.com',
     category: 'ADVANCED',
     lessonsCount: 11,
     seqNo: 9,
@@ -79,9 +76,8 @@ export const COURSES: any = {
   7: {
     id: 7,
     description: 'Angular PWA - Progressive Web Apps Course',
-    longDescription: 'Learn Angular Progressive Web Applications, build the future of the Web Today.',
-    iconUrl: 'https://s3-us-west-1.amazonaws.com/angular-university/course-images/angular-pwa-course.png',
-    courseListIcon: 'https://s3-us-west-1.amazonaws.com/angular-university/course-images/alien.png',
+    longDescription: 'Learn Angular Advanced Web Applications.',
+    iconUrl: 'https://s3-us-west-1.amazonaws.com',
     category: 'ADVANCED',
     lessonsCount: 8,
     seqNo: 10,
@@ -92,9 +88,8 @@ export const COURSES: any = {
   8: {
     id: 8,
     description: 'Angular Advanced Library Course',
-    longDescription: 'Learn Advanced Angular functionality typically used in Library Development. Advanced Components, Directives, Testing, Npm',
-    iconUrl: 'https://angular-academy.s3.amazonaws.com/thumbnails/advanced_angular-small-v3.png',
-    courseListIcon: 'https://angular-academy.s3.amazonaws.com/thumbnails/angular-advanced-lesson-icon.png',
+    longDescription: 'Learn Advanced advanced Components, Directives, Testing, Npm.',
+    iconUrl: 'https://s3-us-west-1.amazonaws.com',
     category: 'ADVANCED',
     seqNo: 11,
     url: 'angular-advanced-course',
@@ -104,9 +99,8 @@ export const COURSES: any = {
   9: {
     id: 9,
     description: 'Typescript Course',
-    longDescription: 'Complete Guide to Typescript From Scratch: Learn the language in-depth and use it to build a Node REST API.',
-    iconUrl: 'https://angular-academy.s3.amazonaws.com/thumbnails/typescript-2-small.png',
-    courseListIcon: 'https://angular-academy.s3.amazonaws.com/thumbnails/typescript-2-lesson.png',
+    longDescription: 'Complete Typescript Guide.',
+    iconUrl: 'https://s3-us-west-1.amazonaws.com',
     category: 'INTERMEDIATE',
     seqNo: 12,
     url: 'typescript-course',
@@ -116,8 +110,8 @@ export const COURSES: any = {
   11: {
     id: 11,
     description: 'Angular Material Course',
-    longDescription: 'Build Applications with the official Angular Widget Library',
-    iconUrl: 'https://s3-us-west-1.amazonaws.com/angular-university/course-images/material_design.png',
+    longDescription: 'Build apps with Angular Widget Library',
+    iconUrl: 'https://s3-us-west-1.amazonaws.com',
     category: 'BEGINNER',
     seqNo: 14,
     url: 'angular-material-course',
@@ -127,8 +121,8 @@ export const COURSES: any = {
   12: {
     id: 12,
     description: 'Angular Testing Course',
-    longDescription: 'In-depth guide to Unit Testing and E2E Testing of Angular Applications',
-    iconUrl: 'https://s3-us-west-1.amazonaws.com/angular-university/course-images/angular-testing-small.png',
+    longDescription: 'Complete guide to Unit Testing and E2E Testing.',
+    iconUrl: 'https://s3-us-west-1.amazonaws.com',
     category: 'BEGINNER',
     seqNo: 5,
     url: 'angular-testing-course',
@@ -140,8 +134,8 @@ export const COURSES: any = {
   14: {
     id: 14,
     description: 'NestJs Course',
-    longDescription: 'Build a modern REST backend using Typescript, MongoDB and the familiar Angular API.',
-    iconUrl: 'https://angular-university.s3-us-west-1.amazonaws.com/course-images/nestjs-v2.png',
+    longDescription: 'Build a REST backend with Typescript, MongoDB.',
+    iconUrl: 'https://s3-us-west-1.amazonaws.com',
     category: 'INTERMEDIATE',
     lessonsCount: 10,
     seqNo: 8,
@@ -153,8 +147,8 @@ export const COURSES: any = {
   16: {
     id: 16,
     description: 'Stripe Course',
-    longDescription: 'Build your own ecommerce store & membership website with Firebase, Stripe and Express',
-    iconUrl: 'https://angular-university.s3-us-west-1.amazonaws.com/course-images/stripe-course.jpg',
+    longDescription: 'Build an ecommerce store & membership website with Firebase, Stripe and Express',
+    iconUrl: 'https://s3-us-west-1.amazonaws.com',
     lessonsCount: 10,
     category: 'INTERMEDIATE',
     seqNo: 7,
@@ -165,9 +159,8 @@ export const COURSES: any = {
   17: {
     id: 17,
     description: 'Reactive Angular Course',
-    longDescription: 'How to build Angular applications in Reactive style using plain RxJs - Patterns and Anti-Patterns',
-    iconUrl: 'https://angular-university.s3-us-west-1.amazonaws.com/course-images/reactive-angular-course.jpg',
-    courseListIcon: 'https://angular-academy.s3.amazonaws.com/main-logo/main-page-logo-small-hat.png',
+    longDescription: 'Build Angular apps in Reactive style using RxJs.',
+    iconUrl: 'https://s3-us-west-1.amazonaws.com',
     category: 'BEGINNER',
     lessonsCount: 10,
     seqNo: 0,
@@ -183,71 +176,71 @@ export const LESSONS = {
   // Angular for Beginners Course
   1: {
     id: 1,
-    'description': 'Angular Tutorial For Beginners - Build Your First App - Hello World Step By Step',
-    'duration': '4:17',
+    'description': 'Angular Tutorial For Beginners',
+    'duration': 4.17,
     'seqNo': 1,
     courseId: 5
   },
   2: {
     id: 2,
-    'description': 'Building Your First  Component - Component Composition',
-    'duration': '2:07',
+    'description': 'Building First Component',
+    'duration': 2.07,
     'seqNo': 2,
     courseId: 5
   },
   3: {
     id: 3,
-    'description': 'Component @Input - How To Pass Input Data To an  Component',
-    'duration': '2:33',
+    'description': 'Component @Input',
+    'duration': 2.33,
     'seqNo': 3,
     courseId: 5
   },
   4: {
     id: 4,
-    'description': ' Component Events - Using @Output to create custom events',
-    'duration': '4:44',
+    'description': 'Component Events',
+    'duration': 4.44,
     'seqNo': 4,
     courseId: 5
   },
   5: {
     id: 5,
-    'description': ' Component Templates - Inline Vs External',
-    'duration': '2:55',
+    'description': 'Component Templates',
+    'duration': 2.55,
     'seqNo': 5,
     courseId: 5
   },
   6: {
     id: 6,
-    'description': 'Styling  Components - Learn About Component Style Isolation',
-    'duration': '3:27',
+    'description': 'Styling  Components',
+    'duration': 3.27,
     'seqNo': 6,
     courseId: 5
   },
   7: {
     id: 7,
-    'description': ' Component Interaction - Extended Components Example',
-    'duration': '9:22',
+    'description': ' Component Interaction',
+    'duration': 9.22,
     'seqNo': 7,
     courseId: 5
   },
   8: {
     id: 8,
-    'description': ' Components Tutorial For Beginners - Components Exercise !',
-    'duration': '1:26',
+    'description': ' Components Tutorial For Beginners',
+    'duration': 1.26,
     'seqNo': 8,
     courseId: 5
   },
   9: {
     id: 9,
-    'description': ' Components Tutorial For Beginners - Components Exercise Solution Inside',
-    'duration': '2:08',
+    'description': 'Components Tutorial For Beginners',
+    'duration': 2.08,
     'seqNo': 9,
     courseId: 5
   },
   10: {
     id: 10,
-    'description': ' Directives - Inputs, Output Event Emitters and How To Export Template References',
-    'duration': '4:01',
+    'description': 'Directives - Inputs, Output Event Emitters',
+    'duration': 4.01,
     'seqNo': 10,
     courseId: 5
   },
@@ -256,77 +249,77 @@ export const LESSONS = {
   11: {
     id: 11,
     'description': 'Course Helicopter View',
-    'duration': '08:19',
+    'duration': 8.1,
     'seqNo': 1,
     courseId: 6
   },
   12: {
     id: 12,
-    'description': 'Installing Git, Node, NPM and Choosing an IDE',
-    'duration': '04:17',
+    'description': 'Installing Git, Node, and NPM / YARN',
+    'duration': 5.2,
     'seqNo': 2,
     courseId: 6
   },
   13: {
     id: 13,
-    'description': 'Installing The Lessons Code - Learn Why Its Essential To Use NPM 5',
-    'duration': '06:05',
+    'description': 'Learn how to use NPM and YARN',
+    'duration': 6.06,
     'seqNo': 3,
     courseId: 6
   },
   14: {
     id: 14,
-    'description': 'How To Run Node In TypeScript With Hot Reloading',
-    'duration': '03:57',
+    'description': 'How to run NodeJS in TypeScript',
+    'duration': 8.1,
     'seqNo': 4,
     courseId: 6
   },
   15: {
     id: 15,
-    'description': 'Guided Tour Of The Sample Application',
-    'duration': '06:00',
+    'description': 'Create a simple Application',
+    'duration': 7,
     'seqNo': 5,
     courseId: 6
   },
   16: {
     id: 16,
-    'description': 'Client Side Authentication Service - API Design',
-    'duration': '04:53',
+    'description': 'Client Side Authentication Service',
+    'duration': 2.1,
     'seqNo': 6,
     courseId: 6
   },
   17: {
     id: 17,
-    'description': 'Client Authentication Service - Design and Implementation',
-    'duration': '09:14',
+    'description': 'Client Authentication Service',
+    'duration': 7.5,
     'seqNo': 7,
     courseId: 6
   },
   18: {
     id: 18,
-    'description': 'The New Angular HTTP Client - Doing a POST Call To The Server',
-    'duration': '06:08',
+    'description': 'The Angular HTTP Client',
+    'duration': 11.2,
     'seqNo': 8,
     courseId: 6
   },
   19: {
     id: 19,
-    'description': 'User Sign Up Server-Side Implementation in Express',
-    'duration': '08:50',
+    'description': 'User Sign Up Server-Side with Express',
+    'duration': 9.5,
     'seqNo': 9,
     courseId: 6
   },
   20: {
     id: 20,
-    'description': 'Introduction To Cryptographic Hashes - A Running Demo',
-    'duration': '05:46',
+    'description': 'Introduction to Cryptographic Hashes',
+    'duration': 2.3,
     'seqNo': 10,
     courseId: 6
   },
   21: {
     id: 21,
-    'description': 'Some Interesting Properties Of Hashing Functions - Validating Passwords',
-    'duration': '06:31',
+    'description': 'Properties Of Hashing Functions',
+    'duration': 3.33,
     'seqNo': 11,
     courseId: 6
   },
@@ -334,57 +327,57 @@ export const LESSONS = {
   // Angular PWA - Progressive Web Apps Course
   22: {
     id: 22,
-    'description': 'Course Kick-Off - Install Node, NPM, IDE And Service Workers Section Code',
-    'duration': '07:19',
+    'description': 'Install Node, NPM and IDE',
+    'duration': 8.15,
     'seqNo': 1,
     courseId: 7
   },
   23: {
     id: 23,
-    'description': 'Service Workers In a Nutshell - Service Worker Registration',
-    'duration': '6:59',
+    'description': 'Service Workers 1',
+    'duration': 5.45,
     'seqNo': 2,
     courseId: 7
   },
   24: {
     id: 24,
-    'description': 'Service Workers Hello World - Lifecycle Part 1 and PWA Chrome Dev Tools',
-    'duration': '7:28',
+    'description': 'Service Workers 2',
+    'duration': 10.5,
     'seqNo': 3,
     courseId: 7
   },
   25: {
     id: 25,
-    'description': 'Service Workers and Application Versioning - Install & Activate Lifecycle Phases',
-    'duration': '10:17',
+    'description': 'Service Workers and Application Versioning',
+    'duration': 3.3,
     'seqNo': 4,
     courseId: 7
   },
   26: {
     id: 26,
-    'description': 'Downloading The Offline Page - The Service Worker Installation Phase',
-    'duration': '09:50',
+    'description': 'The Service Worker Installation Phase',
+    'duration': 6.4,
     'seqNo': 5,
     courseId: 7
   },
   27: {
     id: 27,
     'description': 'Introduction to the Cache Storage PWA API',
-    'duration': '04:44',
+    'duration': 4.55,
     'seqNo': 6,
     courseId: 7
   },
   28: {
     id: 28,
-    'description': 'View Service Workers HTTP Interception Features In Action',
-    'duration': '06:07',
+    'description': 'View Service Workers HTTP Interception Features',
+    'duration': 7.3,
     'seqNo': 7,
     courseId: 7
   },
   29: {
     id: 29,
-    'description': 'Service Workers Error Handling - Serving The Offline Page',
-    'duration': '5:38',
+    'description': 'Service Workers Error Handling',
+    'duration': 5.36,
     'seqNo': 8,
     courseId: 7
   },
@@ -393,70 +386,70 @@ export const LESSONS = {
   30: {
     id: 30,
     description: 'Development Environment Setup',
-    'duration': '5:38',
+    'duration': 9.23,
     'seqNo': 1,
     courseId: 1
   },
   31: {
     id: 31,
     description: 'Introduction to the Firebase Ecosystem',
-    'duration': '5:12',
+    'duration': 5.45,
     'seqNo': 2,
     courseId: 1
   },
   32: {
     id: 32,
     description: 'Importing Data into Firestore',
-    'duration': '4:07',
+    'duration': 4.33,
     'seqNo': 3,
     courseId: 1
   },
   33: {
     id: 33,
-    description: 'Firestore Documents in Detail',
-    'duration': '7:32',
+    description: 'Firestore Documents 1',
+    'duration': 7.28,
     'seqNo': 4,
     courseId: 1
   },
   34: {
     id: 34,
-    description: 'Firestore Collections in Detail',
-    'duration': '6:28',
+    description: 'Firestore Collections 2',
+    'duration': 6.02,
     'seqNo': 5,
     courseId: 1
   },
   35: {
     id: 35,
     description: 'Firestore Unique Identifiers',
-    'duration': '4:38',
+    'duration': 8.15,
     'seqNo': 6,
     courseId: 1
   },
   36: {
     id: 36,
     description: 'Querying Firestore Collections',
-    'duration': '7:54',
+    'duration': 7.55,
     'seqNo': 7,
     courseId: 1
   },
   37: {
     id: 37,
-    description: 'Firebase Security Rules In Detail',
-    'duration': '5:31',
+    description: 'Firebase Security Rules',
+    'duration': 5.12,
     'seqNo': 8,
     courseId: 1
   },
   38: {
     id: 38,
-    description: 'Firebase Cloud Functions In Detail',
-    'duration': '8:19',
+    description: 'Firebase Cloud Functions',
+    'duration': 8.33,
     'seqNo': 9,
     courseId: 1
   },
   39: {
     id: 39,
-    description: 'Firebase Storage In Detail',
-    'duration': '7:05',
+    description: 'Firebase Storage',
+    'duration': 6.05,
     'seqNo': 10,
     courseId: 1
   },
@@ -464,71 +457,71 @@ export const LESSONS = {
   // Angular Testing Course
   40: {
     id: 40,
-    description: 'Angular Testing Course - Helicopter View',
-    'duration': '5:38',
+    description: 'Angular Testing Course',
+    'duration': 5.05,
     'seqNo': 1,
     courseId: 12
   },
   41: {
     id: 41,
     description: 'Setting Up the Development Environment',
-    'duration': '5:12',
+    'duration': 12.43,
     'seqNo': 2,
     courseId: 12
   },
   42: {
     id: 42,
     description: 'Introduction to Jasmine, Spies and specs',
-    'duration': '4:07',
+    'duration': 9.1,
     'seqNo': 3,
     courseId: 12
   },
   43: {
     id: 43,
     description: 'Introduction to Service Testing',
-    'duration': '7:32',
+    'duration': 1.22,
     'seqNo': 4,
     courseId: 12
   },
   44: {
     id: 44,
-    description: 'Settting up the Angular TestBed',
-    'duration': '6:28',
+    description: 'Setting up the Angular TestBed',
+    'duration': 8.14,
     'seqNo': 5,
     courseId: 12
   },
   45: {
     id: 45,
     description: 'Mocking Angular HTTP requests',
-    'duration': '4:38',
+    'duration': 4.35,
     'seqNo': 6,
     courseId: 12
   },
   46: {
     id: 46,
     description: 'Simulating Failing HTTP Requests',
-    'duration': '7:54',
+    'duration': 7.51,
     'seqNo': 7,
     courseId: 12
   },
   47: {
     id: 47,
     description: 'Introduction to Angular Component Testing',
-    'duration': '5:31',
+    'duration': 13.13,
     'seqNo': 8,
     courseId: 12
   },
   48: {
     id: 48,
     description: 'Testing Angular Components without the DOM',
-    'duration': '8:19',
+    'duration': 9.15,
     'seqNo': 9,
     courseId: 12
   },
   49: {
     id: 49,
     description: 'Testing Angular Components with the DOM',
-    'duration': '7:05',
+    'duration': 7.01,
     'seqNo': 10,
     courseId: 12
   },
@@ -536,71 +529,71 @@ export const LESSONS = {
   // Ngrx Course
   50: {
     id: 50,
-    'description': 'Welcome to the Angular Ngrx Course',
-    'duration': '6:53',
+    'description': 'the Angular Ngrx',
+    'duration': 6.33,
     'seqNo': 1,
     courseId: 4
   },
   51: {
     id: 51,
-    'description': 'The Angular Ngrx Architecture Course - Helicopter View',
-    'duration': '5:52',
+    'description': 'Angular Ngrx Architecture',
+    'duration': 5.33,
     'seqNo': 2,
     courseId: 4
   },
   52: {
     id: 52,
-    'description': 'The Origins of Flux - Understanding the Famous Facebook Bug Problem',
-    'duration': '8:17',
+    'description': 'The Origins of Flux',
+    'duration': 8.44,
     'seqNo': 3,
     courseId: 4
   },
   53: {
     id: 53,
-    'description': 'Custom Global Events - Why Don\'t They Scale In Complexity?',
-    'duration': '7:47',
+    'description': 'Custom Global Events',
+    'duration': 7,
     'seqNo': 4,
     courseId: 4
   },
   54: {
     id: 54,
-    'description': 'The Flux Architecture - How Does it Solve Facebook Counter Problem?',
-    'duration': '9:22',
+    'description': 'The Flux Architecture',
+    'duration': 9,
     'seqNo': 5,
     courseId: 4
   },
   55: {
     id: 55,
     'description': 'Unidirectional Data Flow And The Angular Development Mode',
-    'duration': '7:07',
+    'duration': 11,
     'seqNo': 6,
     courseId: 4
   },
   56: {
     id: 56,
-    'description': 'Dispatching an Action - Implementing the Login Component',
-    'duration': '4:39',
+    'description': 'Dispatching an Action',
+    'duration': 1.12,
     'seqNo': 7,
     courseId: 4
   },
   57: {
     id: 57,
-    'description': 'Setting Up the Ngrx DevTools - Demo',
-    'duration': '4:44',
+    'description': 'Setting Up the Ngrx Devtools',
+    'duration': 4.22,
     'seqNo': 8,
     courseId: 4
   },
   58: {
     id: 58,
-    'description': 'Understanding Reducers - Writing Our First Reducer',
-    'duration': '9:10',
+    'description': 'Understanding Reducers',
+    'duration': 9.33,
     'seqNo': 9,
     courseId: 4
   },
   59: {
     id: 59,
-    'description': 'How To Define the Store Initial State',
-    'duration': '9:10',
+    'description': 'How to Define the Store Initial State',
+    'duration': 9.1,
     'seqNo': 10,
     courseId: 4
   },
@@ -609,70 +602,70 @@ export const LESSONS = {
   60: {
     id: 60,
     'description': 'Introduction to NestJs',
-    'duration': '4:29',
+    'duration': 4,
     'seqNo': 1,
     courseId: 14
   },
   61: {
     id: 61,
     'description': 'Development Environment Setup',
-    'duration': '6:37',
+    'duration': 3,
     'seqNo': 2,
     courseId: 14
   },
   62: {
     id: 62,
-    'description': 'Setting up a MongoDB Database',
-    'duration': '6:38',
+    'description': 'Setting up MongoDB',
+    'duration': 2,
     'seqNo': 3,
     courseId: 14
   },
   63: {
     id: 63,
-    'description': 'CRUD with NestJs - Controllers and Repositories',
-    'duration': '12:12',
+    'description': 'CRUD with NestJs',
+    'duration': 8.33,
     'seqNo': 4,
     courseId: 14
   },
   64: {
     id: 64,
-    'description': 'First REST endpoint - Get All Courses',
-    'duration': '3:42',
+    'description': 'First REST endpoint',
+    'duration': 5.14,
     'seqNo': 5,
     courseId: 14
   },
   65: {
     id: 65,
     'description': 'Error Handling',
-    'duration': '5:15',
+    'duration': 21.2,
     'seqNo': 6,
     courseId: 14
   },
   66: {
     id: 66,
-    'description': 'NestJs INTERMEDIATEware',
-    'duration': '7:08',
+    'description': 'NestJs Intermediate',
+    'duration': 13.44,
     'seqNo': 7,
     courseId: 14
   },
   67: {
     id: 67,
     'description': 'Authentication in NestJs',
-    'duration': '13:22',
+    'duration': 5.25,
     'seqNo': 8,
     courseId: 14
   },
   68: {
     id: 68,
     'description': 'Authorization in NestJs',
-    'duration': '6:43',
+    'duration': 6.34,
     'seqNo': 9,
     courseId: 14
   },
   69: {
     id: 69,
     'description': 'Guards & Interceptors',
-    'duration': '8:16',
+    'duration': 9.31,
     'seqNo': 10,
     courseId: 14
   },
@@ -681,70 +674,70 @@ export const LESSONS = {
   70: {
     id: 70,
     'description': 'Introduction to Stripe Payments',
-    'duration': '03:45',
+    'duration': 3.43,
     'seqNo': 0,
     courseId: 16
   },
   71: {
     id: 71,
     'description': 'The advantages of Stripe Checkout',
-    'duration': '08:36',
+    'duration': 11.23,
     'seqNo': 1,
     courseId: 16
   },
   72: {
     id: 72,
     'description': 'Setting up the development environment',
-    'duration': '09:10',
+    'duration': 9.23,
     'seqNo': 2,
     courseId: 16
   },
   73: {
     id: 73,
     'description': 'Creating a server Checkout Session',
-    'duration': '07:20',
+    'duration': 7.34,
     'seqNo': 3,
     courseId: 16
   },
   74: {
     id: 74,
     'description': 'Redirecting to the Stripe Checkout page',
-    'duration': '11:47',
+    'duration': 12.36,
     'seqNo': 4,
     courseId: 16
   },
   75: {
     id: 75,
     'description': 'Order fulfillment webhook',
-    'duration': '06:30',
+    'duration': 6.01,
     'seqNo': 5,
     courseId: 16
   },
   76: {
     id: 76,
     'description': 'Installing the Stripe CLI',
-    'duration': '4:13',
+    'duration': 5.1,
     'seqNo': 6,
     courseId: 16
   },
   77: {
     id: 77,
-    'description': 'Firestore Security Rules for protecting Premium content',
-    'duration': '05:47',
+    'description': 'Firestore Security Rules',
+    'duration': 7.47,
     'seqNo': 7,
     courseId: 16
   },
   78: {
     id: 78,
     'description': 'Stripe Subscriptions with Stripe Checkout',
-    'duration': '05:17',
+    'duration': 5.37,
     'seqNo': 8,
     courseId: 16
   },
   79: {
     id: 79,
     'description': 'Stripe Subscription Fulfillment',
-    'duration': '07:50',
+    'duration': 7.41,
     'seqNo': 9,
     courseId: 16
   },
@@ -753,7 +746,7 @@ export const LESSONS = {
   80: {
     id: 80,
     'description': 'Introduction to Reactive Programming',
-    'duration': '03:45',
+    'duration': 2.34,
     'seqNo': 0,
     courseId: 17,
     videoId: '8m5RrAtql'
@@ -761,7 +754,7 @@ export const LESSONS = {
   81: {
     id: 81,
     'description': 'Introduction to RxJs',
-    'duration': '08:36',
+    'duration': 1.23,
     'seqNo': 1,
     courseId: 17,
     videoId: '8m5RrAtql'
@@ -769,7 +762,7 @@ export const LESSONS = {
   82: {
     id: 82,
     'description': 'Setting up the development environment',
-    'duration': '09:10',
+    'duration': 27.23,
     'seqNo': 2,
     courseId: 17,
     videoId: '8m5RrAtql'
@@ -777,7 +770,7 @@ export const LESSONS = {
   83: {
     id: 83,
     'description': 'Designing and building a Service Layer',
-    'duration': '07:20',
+    'duration': 7.38,
     'seqNo': 3,
     courseId: 17,
     videoId: ''
@@ -785,15 +778,15 @@ export const LESSONS = {
   84: {
     id: 84,
     'description': 'Stateless Observable Services',
-    'duration': '11:47',
+    'duration': 10.10,
     'seqNo': 4,
     courseId: 17,
     videoId: '8m5RrAtql'
   },
   85: {
     id: 85,
-    'description': 'Smart vs Presentational Components',
-    'duration': '06:30',
+    'description': 'Smart and Presentational Components',
+    'duration': 13.46,
     'seqNo': 5,
     courseId: 17,
     videoId: '8m5RrAtql'
@@ -801,15 +794,15 @@ export const LESSONS = {
   86: {
     id: 86,
     'description': 'Lightweight state management',
-    'duration': '4:13',
+    'duration': 4.11,
     'seqNo': 6,
     courseId: 17,
     videoId: '8m5RrAtql'
   },
   87: {
     id: 87,
-    'description': 'Event bubbling anti-pattern',
-    'duration': '05:47',
+    'description': 'Event anti-pattern',
+    'duration': 5.43,
     'seqNo': 7,
     courseId: 17,
     videoId: '8m5RrAtql'
@@ -817,7 +810,7 @@ export const LESSONS = {
   88: {
     id: 88,
     'description': 'Master detail with cached master table',
-    'duration': '05:17',
+    'duration': 3.21,
     'seqNo': 8,
     courseId: 17,
     videoId: '8m5RrAtql'
@@ -825,7 +818,7 @@ export const LESSONS = {
   89: {
     id: 89,
     'description': 'Error handling',
-    'duration': '07:50',
+    'duration': 7.54,
     'seqNo': 9,
     courseId: 17,
     videoId: '8m5RrAtql'
@@ -835,7 +828,7 @@ export const LESSONS = {
   90: {
     id: 90,
     'description': 'Introduction to Reactive Programming',
-    'duration': '03:45',
+    'duration': 6.41,
     'seqNo': 0,
     courseId: 3,
     videoId: '8m5RrAtql'
@@ -843,7 +836,7 @@ export const LESSONS = {
   91: {
     id: 91,
     'description': 'Introduction to RxJs',
-    'duration': '08:36',
+    'duration': 15.11,
     'seqNo': 1,
     courseId: 3,
     videoId: '8m5RrAtql'
@@ -851,7 +844,7 @@ export const LESSONS = {
   92: {
     id: 92,
     'description': 'Setting up the development environment',
-    'duration': '09:10',
+    'duration': 33.11,
     'seqNo': 2,
     courseId: 3,
     videoId: '8m5RrAtql'
@@ -859,7 +852,7 @@ export const LESSONS = {
   93: {
     id: 93,
     'description': 'Designing and building a Service Layer',
-    'duration': '07:20',
+    'duration': 23.11,
     'seqNo': 3,
     courseId: 3,
     videoId: ''
@@ -867,7 +860,7 @@ export const LESSONS = {
   94: {
     id: 94,
     'description': 'Stateless Observable Services',
-    'duration': '11:47',
+    'duration': 9.31,
     'seqNo': 4,
     courseId: 3,
     videoId: '8m5RrAtql'
@@ -875,7 +868,7 @@ export const LESSONS = {
   95: {
     id: 95,
     'description': 'Smart vs Presentational Components',
-    'duration': '06:30',
+    'duration': 21.45,
     'seqNo': 5,
     courseId: 3,
     videoId: '8m5RrAtql'
@@ -883,7 +876,7 @@ export const LESSONS = {
   96: {
     id: 96,
     'description': 'Lightweight state management',
-    'duration': '4:13',
+    'duration': 4.31,
     'seqNo': 6,
     courseId: 3,
     videoId: '8m5RrAtql'
@@ -891,7 +884,7 @@ export const LESSONS = {
   97: {
     id: 97,
     'description': 'Event bubbling anti-pattern',
-    'duration': '05:47',
+    'duration': 5.42,
     'seqNo': 7,
     courseId: 3,
     videoId: '8m5RrAtql'
@@ -899,7 +892,7 @@ export const LESSONS = {
   98: {
     id: 98,
     'description': 'Master detail with cached master table',
-    'duration': '05:17',
+    'duration': 33.23,
     'seqNo': 8,
     courseId: 3,
     videoId: '8m5RrAtql'
@@ -907,7 +900,7 @@ export const LESSONS = {
   99: {
     id: 99,
     'description': 'Error handling',
-    'duration': '07:50',
+    'duration': 6.23,
     'seqNo': 9,
     courseId: 3,
     videoId: '8m5RrAtql'
@@ -917,70 +910,70 @@ export const LESSONS = {
   100: {
     id: 100,
     'description': 'Introduction to NestJs',
-    'duration': '4:29',
+    'duration': 5.54,
     'seqNo': 1,
     courseId: 11
   },
   101: {
     id: 101,
     'description': 'Development Environment Setup',
-    'duration': '6:37',
+    'duration': 5.44,
     'seqNo': 2,
     courseId: 11
   },
   102: {
     id: 102,
     'description': 'Setting up a MongoDB Database',
-    'duration': '6:38',
+    'duration': 6.38,
     'seqNo': 3,
     courseId: 11
   },
   103: {
     id: 103,
     'description': 'CRUD with NestJs - Controllers and Repositories',
-    'duration': '12:12',
+    'duration': 18.18,
     'seqNo': 4,
     courseId: 11
   },
   104: {
     id: 104,
     'description': 'First REST endpoint - Get All Courses',
-    'duration': '3:42',
+    'duration': 19.19,
     'seqNo': 5,
     courseId: 11
   },
   105: {
     id: 105,
     'description': 'Error Handling',
-    'duration': '5:15',
+    'duration': 5.27,
     'seqNo': 6,
     courseId: 11
   },
   106: {
     id: 106,
     'description': 'NestJs INTERMEDIATEware',
-    'duration': '7:08',
+    'duration': 7.09,
     'seqNo': 7,
     courseId: 11
   },
   107: {
     id: 107,
     'description': 'Authentication in NestJs',
-    'duration': '13:22',
+    'duration': 11.59,
     'seqNo': 8,
     courseId: 11
   },
   108: {
     id: 108,
     'description': 'Authorization in NestJs',
-    'duration': '6:43',
+    'duration': 7.18,
     'seqNo': 9,
     courseId: 11
   },
   109: {
     id: 109,
     'description': 'Guards & Interceptors',
-    'duration': '8:16',
+    'duration': 8.23,
     'seqNo': 10,
     courseId: 11
   },
@@ -988,71 +981,71 @@ export const LESSONS = {
   // Angular Core Deep Dive Course
   110: {
     id: 110,
-    'description': 'Introduction to NestJs',
-    'duration': '4:29',
+    'description': 'Introduction to Angular Core',
+    'duration': 4.16,
     'seqNo': 1,
     courseId: 2
   },
   111: {
     id: 111,
     'description': 'Development Environment Setup',
-    'duration': '6:37',
+    'duration': 7.34,
     'seqNo': 2,
     courseId: 2
   },
   112: {
     id: 112,
-    'description': 'Setting up a MongoDB Database',
-    'duration': '6:38',
+    'description': 'Setting up Angular Core',
+    'duration': 6.12,
     'seqNo': 3,
     courseId: 2
   },
   113: {
     id: 113,
-    'description': 'CRUD with NestJs - Controllers and Repositories',
-    'duration': '12:12',
+    'description': 'Angular Core 2',
+    'duration': 20.12,
     'seqNo': 4,
     courseId: 2
   },
   114: {
     id: 114,
-    'description': 'First REST endpoint - Get All Courses',
-    'duration': '3:42',
+    'description': 'First Angular Core 3',
+    'duration': 3.42,
     'seqNo': 5,
     courseId: 2
   },
   115: {
     id: 115,
-    'description': 'Error Handling',
-    'duration': '5:15',
+    'description': 'Error Handling with Angular Core',
+    'duration': 9.12,
     'seqNo': 6,
     courseId: 2
   },
   116: {
     id: 116,
-    'description': 'NestJs INTERMEDIATEware',
-    'duration': '7:08',
+    'description': 'Angular Core in detail',
+    'duration': 7.43,
     'seqNo': 7,
     courseId: 2
   },
   117: {
     id: 117,
-    'description': 'Authentication in NestJs',
-    'duration': '13:22',
+    'description': 'Authentication wth Angular',
+    'duration': 17.23,
     'seqNo': 8,
     courseId: 2
   },
   118: {
     id: 118,
-    'description': 'Authorization in NestJs',
-    'duration': '6:43',
+    'description': 'Authorization wth Angular',
+    'duration': 9.12,
     'seqNo': 9,
     courseId: 2
   },
   119: {
     id: 119,
     'description': 'Guards & Interceptors',
-    'duration': '8:16',
+    'duration': 8.31,
     'seqNo': 10,
     courseId: 2
   },
@@ -1061,70 +1054,70 @@ export const LESSONS = {
   120: {
     id: 120,
     'description': 'Introduction to NestJs',
-    'duration': '4:29',
+    'duration': 4.29,
     'seqNo': 1,
     courseId: 8
   },
   121: {
     id: 121,
     'description': 'Development Environment Setup',
-    'duration': '6:37',
+    'duration': 6.37,
     'seqNo': 2,
     courseId: 8
   },
   122: {
     id: 122,
     'description': 'Setting up a MongoDB Database',
-    'duration': '6:38',
+    'duration': 6.38,
     'seqNo': 3,
     courseId: 8
   },
   123: {
     id: 123,
     'description': 'CRUD with NestJs - Controllers and Repositories',
-    'duration': '12:12',
+    'duration': 12.12,
     'seqNo': 4,
     courseId: 8
   },
   124: {
     id: 124,
     'description': 'First REST endpoint - Get All Courses',
-    'duration': '3:42',
+    'duration': 3.42,
     'seqNo': 5,
     courseId: 8
   },
   125: {
     id: 125,
     'description': 'Error Handling',
-    'duration': '5:15',
+    'duration': 5.15,
     'seqNo': 6,
     courseId: 8
   },
   126: {
     id: 126,
     'description': 'NestJs INTERMEDIATEware',
-    'duration': '7:08',
+    'duration': 7.08,
     'seqNo': 7,
     courseId: 8
   },
   127: {
     id: 127,
-    'description': 'Authentication in NestJs',
-    'duration': '13:22',
+    'description': 'Authentication wth Angular',
+    'duration': 17.13,
     'seqNo': 8,
     courseId: 8
   },
   128: {
     id: 128,
-    'description': 'Authorization in NestJs',
-    'duration': '6:43',
+    'description': 'Authorization wth Angular',
+    'duration': 6.12,
     'seqNo': 9,
     courseId: 8
   },
   129: {
     id: 129,
     'description': 'Guards & Interceptors',
-    'duration': '8:16',
+    'duration': 8.21,
     'seqNo': 10,
     courseId: 8
   },
@@ -1133,70 +1126,70 @@ export const LESSONS = {
   130: {
     id: 130,
     'description': 'Introduction to NestJs',
-    'duration': '4:29',
+    'duration': 4.43,
     'seqNo': 1,
     courseId: 9
   },
   131: {
     id: 131,
     'description': 'Development Environment Setup',
-    'duration': '6:37',
+    'duration': 3.23,
     'seqNo': 2,
     courseId: 9
   },
   132: {
     id: 132,
     'description': 'Setting up a MongoDB Database',
-    'duration': '6:38',
+    'duration': 5.6,
     'seqNo': 3,
     courseId: 9
   },
   133: {
     id: 133,
     'description': 'CRUD with NestJs - Controllers and Repositories',
-    'duration': '13:13',
+    'duration': 10.23,
     'seqNo': 4,
     courseId: 9
   },
   134: {
     id: 134,
     'description': 'First REST endpoint - Get All Courses',
-    'duration': '3:42',
+    'duration': 3.12,
     'seqNo': 5,
     courseId: 9
   },
   135: {
     id: 135,
     'description': 'Error Handling',
-    'duration': '5:15',
+    'duration': 5.21,
     'seqNo': 6,
     courseId: 9
   },
   136: {
     id: 136,
     'description': 'NestJs INTERMEDIATEware',
-    'duration': '7:08',
+    'duration': 13.1,
     'seqNo': 7,
     courseId: 9
   },
   137: {
     id: 137,
-    'description': 'Authentication in NestJs',
-    'duration': '13:22',
+    'description': 'Authentication wth Angular',
+    'duration': 7.22,
     'seqNo': 8,
     courseId: 9
   },
   138: {
     id: 138,
-    'description': 'Authorization in NestJs',
-    'duration': '6:43',
+    'description': 'Authorization wth Angular',
+    'duration': 3.41,
     'seqNo': 9,
     courseId: 9
   },
   139: {
     id: 139,
     'description': 'Guards & Interceptors',
-    'duration': '8:16',
+    'duration': 8.13,
     'seqNo': 10,
     courseId: 9
   }
@@ -1208,7 +1201,12 @@ export const USERS = {
     id: 1,
     email: 'test@test.io',
     password: 'test',
-    pictureUrl: 'https://lh3.googleusercontent.com/-1pUNnTB3vaA/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rdn4uEc0ti8YE4Uuw6_Kz04tVe2Mg.CMID/s32-c/photo.jpg'
+    pictureUrl: 'https://UserPicture.jpg',
+    name: 'testName',
+    surname: 'testSurname',
+    address: 'Test Address',
+    lastLogin: '',
+    subscriptionDate: '',
   }
 };
 

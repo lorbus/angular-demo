@@ -82,19 +82,30 @@ export class CoursesService {
   }
 
   findLessons(
-    courseId:number, sortOrder = 'asc',
-    pageNumber = 0, pageSize = 3, sortColumn = 'seqNo'):  Observable<Lesson[]> {
+    courseId: number,
+    sortOrder: string,
+    pageNumber: number,
+    pageSize: number,
+    sortColumn: string,
+  ):  Observable<Lesson[]> {
 
     return this.http.get('/api/lessons', {
       params: new HttpParams()
         .set('courseId', courseId.toString())
         .set('sortOrder', sortOrder)
-        .set('pageNumber', pageNumber.toString())
+        //.set('sortColumn', sortColumn)
         .set('pageSize', pageSize.toString())
-        .set('sortColumn', sortColumn)
+        .set('pageNumber', pageNumber.toString())
     }).pipe(
-      map(res =>  res["payload"])
+      map(res => res["payload"]
+        .sort((a, b) => compare(a[sortColumn], b[sortColumn], sortOrder === "asc"))
+      )
     );
   }
 
 }
+
+function compare(a: number | string, b: number | string, isAsc: boolean) {
+  return (a < b ? -1 : 1) * (isAsc ? 1 : -1);
+}
+
