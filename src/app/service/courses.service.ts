@@ -50,7 +50,7 @@ export class CoursesService {
       return this.http.get<Lesson[]>('/api/lessons', {
         params: {
             filter: search,
-            pageSize: "100",
+            pageSize: "1000",
         }
       })
       .pipe(
@@ -93,7 +93,7 @@ export class CoursesService {
       params: new HttpParams()
         .set('courseId', courseId.toString())
         .set('sortOrder', sortOrder)
-        //.set('sortColumn', sortColumn)
+        .set('sortColumn', sortColumn)
         .set('pageSize', pageSize.toString())
         .set('pageNumber', pageNumber.toString())
     }).pipe(

@@ -35,6 +35,7 @@ export class SearchLessonsComponent implements OnInit {
 
   onSearch(search:string) {
     this.searchResults$  = this.coursesService.searchLessons(search);
+
     this.loading.showLoaderUntilCompleted(this.searchResults$).subscribe();
   }
 

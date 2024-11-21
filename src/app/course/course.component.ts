@@ -2,15 +2,13 @@ import {AfterViewInit, Component, OnInit, ViewChild} from '@angular/core';
 import {ActivatedRoute, Router} from "@angular/router";
 import {Course} from "../model/course";
 import {CoursesService} from "../service/courses.service";
-import { tap, catchError, finalize} from 'rxjs/operators';
+import {tap, catchError, finalize} from 'rxjs/operators';
 import {merge, throwError} from 'rxjs';
 import {Lesson} from '../model/lesson';
-import { ToastrService } from 'ngx-toastr';
-import { LoadingService } from '../loading/loading.service';
-import { MatPaginator } from "@angular/material/paginator";
-import { MatSort } from "@angular/material/sort";
-
-//import {SelectionModel} from '@angular/cdk/collections';
+import {ToastrService} from 'ngx-toastr';
+import {LoadingService} from '../loading/loading.service';
+import {MatPaginator} from "@angular/material/paginator";
+import {MatSort} from "@angular/material/sort";
 
 @Component({
   selector: 'course',
@@ -30,8 +28,6 @@ export class CourseComponent implements OnInit, AfterViewInit {
   sort: MatSort;
 
   activeLesson: Lesson;
-
-  //selection = new SelectionModel<Lesson>(true, []);
 
   constructor(
     private readonly route: ActivatedRoute,
@@ -68,7 +64,7 @@ export class CourseComponent implements OnInit, AfterViewInit {
       this.sort?.direction ?? "asc",
       this.paginator?.pageIndex ?? 0,
       this.paginator?.pageSize ?? 5,
-      this.sort?.active ?? "seqNo"
+      this.sort?.active ?? "seqNo",
     )
       .pipe(
         tap(lessons => this.lessons = lessons),
@@ -92,32 +88,6 @@ export class CourseComponent implements OnInit, AfterViewInit {
       )
       .subscribe();
   }
-
-  /*
-  onToggleLesson(lesson:Lesson) {
-    if (lesson == this.expandedLesson) {
-      this.expandedLesson = null;
-    } else {
-      this.expandedLesson = lesson;
-    }
-  }
-
-  onLessonToggled(lesson:Lesson) {
-    this.selection.toggle(lesson);
-  }
-
-  isAllSelected() {
-    return this.selection.selected?.length == this.lessons?.length;
-  }
-
-  toggleAll() {
-    if (this.isAllSelected()) {
-      this.selection.clear();
-    } else {
-      this.selection.select(...this.lessons);
-    }
-  }
-  */
 
   openLesson(lesson: Lesson) {
     this.activeLesson = lesson;
