@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { AuthStore } from './service/auth.store';
-import { Router } from "@angular/router";
+import {Component, OnInit} from '@angular/core';
+import {AuthStore} from './service/auth.store';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-root',
@@ -20,7 +20,7 @@ export class AppComponent implements OnInit {
   }
 
   logout() {
-      this.auth.logout();
-      this.router.navigateByUrl("/login").then(r => []);
-    }
+    this.auth.logout();
+    this.router.navigateByUrl("/login").then(r => []);
+  }
 }

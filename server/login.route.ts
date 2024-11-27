@@ -1,5 +1,5 @@
-import { Request, Response } from 'express';
-import { authenticate } from "./db-data";
+import {Request, Response} from 'express';
+import {authenticate} from "./db-data";
 
 export function loginUser(req: Request, res: Response) {
   const {email, password} = req.body;

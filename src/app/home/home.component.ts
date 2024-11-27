@@ -1,8 +1,8 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { Course } from '../model/course';
-import { Observable } from 'rxjs';
-import { CoursesStore } from '../service/courses.store';
-import { Router } from "@angular/router";
+import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
+import {Course} from '../model/course';
+import {Observable} from 'rxjs';
+import {CoursesStore} from '../service/courses.store';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'home',
@@ -18,8 +18,8 @@ export class HomeComponent implements OnInit {
   advancedCourses$: Observable<Course[]>;
 
   constructor(
-    private coursesStore: CoursesStore,
-    private router: Router,
+    private readonly coursesStore: CoursesStore,
+    private readonly router: Router,
   ) {
 
   }

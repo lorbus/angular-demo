@@ -1,9 +1,9 @@
 import * as express from 'express';
-import { Application } from "express";
-import { getAllCourses, getCourseById } from "./get-courses.route";
-import { searchLessons } from "./search-lessons.route";
-import { saveCourse } from './save-course.route';
-import { loginUser } from './login.route';
+import {Application} from "express";
+import {getAllCourses, getCourseById} from "./get-courses.route";
+import {searchLessons} from "./search-lessons.route";
+import {saveCourse} from './save-course.route';
+import {loginUser} from './login.route';
 
 const bodyParser = require('body-parser');
 
@@ -29,6 +29,3 @@ app.route('/api/login').post(loginUser);
 const httpServer = app.listen(9000, () => {
   console.log("REST API Server running at http://localhost:" + httpServer.address()["port"]);
 });
-
-
-

@@ -1,5 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { Lesson } from '../model/lesson';
+import {Component, Input, OnInit} from '@angular/core';
+import {Lesson} from '../model/lesson';
 
 @Component({
   selector: 'lesson',
@@ -16,7 +16,7 @@ export class LessonComponent implements OnInit {
   }
 
   ngOnInit() {
-
+    // method 'ngOnInit' is empty
   }
 
 }

@@ -1,23 +1,23 @@
-import { Injectable } from '@angular/core';
-import { BehaviorSubject, Observable, throwError } from 'rxjs';
-import { Course, sortCoursesBySeqNo } from '../model/course';
-import { catchError, map, shareReplay, tap } from 'rxjs/operators';
-import { HttpClient } from '@angular/common/http';
-import { LoadingService } from '../loading/loading.service';
-import { ToastrService } from 'ngx-toastr';
+import {Injectable} from '@angular/core';
+import {BehaviorSubject, Observable, throwError} from 'rxjs';
+import {Course, sortCoursesBySeqNo} from '../model/course';
+import {catchError, map, shareReplay, tap} from 'rxjs/operators';
+import {HttpClient} from '@angular/common/http';
+import {LoadingService} from '../loading/loading.service';
+import {ToastrService} from 'ngx-toastr';
 
 @Injectable({
     providedIn: 'root'
 })
 export class CoursesStore {
-    private subject = new BehaviorSubject<Course[]>([]);
+    private readonly subject = new BehaviorSubject<Course[]>([]);
 
     courses$: Observable<Course[]> = this.subject.asObservable();
 
     constructor(
-      private http: HttpClient,
-      private loading: LoadingService,
-      private toast: ToastrService,
+      private readonly http: HttpClient,
+      private readonly loading: LoadingService,
+      private readonly toast: ToastrService,
     ) {
       this.loadAllCourses();
     }

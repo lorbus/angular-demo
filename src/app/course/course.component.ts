@@ -38,9 +38,7 @@ export class CourseComponent implements OnInit, AfterViewInit {
   ) {
   }
 
-  displayedColumns = ['seqNo', "description", "duration"]; //'select',
-
-  //expandedLesson: Lesson = null;
+  displayedColumns = ['seqNo', "description", "duration"];
 
   ngOnInit() {
     this.loading.loadingOff();

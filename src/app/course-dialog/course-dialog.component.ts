@@ -1,11 +1,11 @@
 import moment from 'moment';
-import { Component, Inject } from '@angular/core';
-import { MAT_DIALOG_DATA, MatDialogRef } from "@angular/material/dialog";
-import { Course} from "../model/course";
-import { FormBuilder, Validators, FormGroup } from "@angular/forms";
-import { LoadingService } from '../loading/loading.service';
-import { CoursesStore } from '../service/courses.store';
-import { ToastrService } from 'ngx-toastr';
+import {Component, Inject} from '@angular/core';
+import {MAT_DIALOG_DATA, MatDialogRef} from "@angular/material/dialog";
+import {Course} from "../model/course";
+import {FormBuilder, Validators, FormGroup} from "@angular/forms";
+import {LoadingService} from '../loading/loading.service';
+import {CoursesStore} from '../service/courses.store';
+import {ToastrService} from 'ngx-toastr';
 
 @Component({
   selector: 'course-dialog',

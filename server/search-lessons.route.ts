@@ -1,7 +1,6 @@
-import { Request, Response } from 'express';
-import { setTimeout } from "timers";
-
-import { LESSONS } from "./db-data";
+import {Request, Response} from 'express';
+import {setTimeout} from "timers";
+import {LESSONS } from "./db-data";
 
 export function searchLessons(req: Request, res: Response) {
     const queryParams = req.query as any;

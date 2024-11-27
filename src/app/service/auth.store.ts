@@ -1,8 +1,8 @@
-import { Injectable } from '@angular/core';
-import { BehaviorSubject, Observable } from 'rxjs';
-import { User } from '../model/user';
-import { map, shareReplay, tap } from 'rxjs/operators';
-import { HttpClient } from '@angular/common/http';
+import {Injectable} from '@angular/core';
+import {BehaviorSubject, Observable} from 'rxjs';
+import {User} from '../model/user';
+import {map, shareReplay, tap} from 'rxjs/operators';
+import {HttpClient} from '@angular/common/http';
 
 const AUTH_DATA = "auth_data";
 
@@ -37,7 +37,7 @@ export class AuthStore {
                 this.subject.next(user);
                 localStorage.setItem(AUTH_DATA, JSON.stringify(user));
             }),
-            shareReplay()
+            shareReplay(),
         );
     }
 
